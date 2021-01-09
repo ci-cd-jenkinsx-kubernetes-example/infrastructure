@@ -50,3 +50,23 @@ variable "jx_bot_token" {
   description = "Bot token used to interact with the Jenkins X cluster git repository"
   type        = string
 }
+
+variable "node_machine_type" {
+  description = "Instance type to be used by jenkins instances"
+  type        = string
+}
+
+variable "desired_node_count" {
+  description = "Desired number of jenkins workers"
+  type        = number
+}
+
+variable "min_node_count" {
+  description = "Min number of jenkins workers"
+  type        = number
+}
+
+variable "max_node_count" {
+  description = "Max number of jenkins workers"
+  type        = number
+}
