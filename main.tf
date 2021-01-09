@@ -1,3 +1,6 @@
+provider "helm" {
+  version = "1.3.2"
+}
 module "eks-jx" {
   source          = "jenkins-x/eks-jx/aws"
   cluster_name    = var.cluster_name
